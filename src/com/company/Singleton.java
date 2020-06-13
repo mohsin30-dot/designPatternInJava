@@ -1,7 +1,11 @@
 package com.company;
 
 class SingletonEagar {
-    // when we are defining variable at the same time we are declaring it
+    // Declaring variable at the same time defining variable
+    //singleton pattern define a class that has only one instance and provides a global point of access
+    //a class must ensure that only single instance should be created and single object can be used all other class
+
+
     private static SingletonEagar instance = new SingletonEagar();
 
     private SingletonEagar(){} // constructor should be private
@@ -43,7 +47,7 @@ class SingletonSynchronizedMethod {
 }
 
 class SingletonSynchronized {
-    private static SingletonSynchronized instance;
+    private static SingletonSynchronized instance; // constructor private
 
     private SingletonSynchronized(){}
 
@@ -58,22 +62,18 @@ class SingletonSynchronized {
         return instance;
     }
 }
-class SingletonExample {
+ public class SingletonExample {
 
     public static void main(String[] args) {
         SingletonSynchronized instance = SingletonSynchronized.getInstance();
 
-        System.out.println(instance);
+        System.out.println("instance");
 
         SingletonSynchronized instance1 = SingletonSynchronized.getInstance();
 
-        System.out.println(instance1);
+        System.out.println("instance1");
     }
 }
 
-/* note-
-# single pattern define a class that has only one instance and provides a global point of access
-# a class must ensure that only single instance should be created and single object can be used by all other classes
-    private static Singleton firstInstance = null;
- */
+
 
