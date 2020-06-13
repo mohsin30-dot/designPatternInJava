@@ -1,4 +1,4 @@
-package com.company;
+package Factory;
 
 abstract class Vehicle {
     public abstract int getWheel();

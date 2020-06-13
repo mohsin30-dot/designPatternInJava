@@ -62,7 +62,7 @@ class SingletonSynchronized {
         return instance;
     }
 }
- public class SingletonExample {
+ class SingletonExample {
 
     public static void main(String[] args) {
         SingletonSynchronized instance = SingletonSynchronized.getInstance();
